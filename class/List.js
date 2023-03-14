@@ -16,3 +16,7 @@ class List {
 const vova = new List(["one", "two", "three", "FOUR"]);
 console.log(vova.render());
 document.write(vova.render().outerHTML);
+// document.getElementById("id").innerHTML = vova.render();
+document.write(vova.render().outerHTML);
+
+document.body.insertAdjacentElement("beforeend", vova.render());
